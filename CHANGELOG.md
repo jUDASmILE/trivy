@@ -1,5 +1,27 @@
 # Changelog
 
+## [0.75.0](https://github.com/aquasecurity/trivy/compare/v0.74.0...v0.75.0) (2026-09-08)
+
+
+### Features
+
+* add cryptographic asset model and parser ([#10970](https://github.com/aquasecurity/trivy/issues/10970)) ([64e1715](https://github.com/aquasecurity/trivy/commit/64e17158b838f3154be3c75cd4799d058143ea92))
+
+
+### Bug Fixes
+
+* **go:** restore stdlib version parsing for vendor-patched Go toolchains ([#11119](https://github.com/aquasecurity/trivy/issues/11119)) ([a851889](https://github.com/aquasecurity/trivy/commit/a851889c930eb8a604dec96ad9a783d75e2b6ac6))
+* **license:** use canonical SPDX casing for license.id ([#11165](https://github.com/aquasecurity/trivy/issues/11165)) ([89d3acf](https://github.com/aquasecurity/trivy/commit/89d3acfce93a34e2120dbff0f71c947aadce4c83))
+* **misconf:** report correct line numbers in multi-document manifests ([#11207](https://github.com/aquasecurity/trivy/issues/11207)) ([4eac9a0](https://github.com/aquasecurity/trivy/commit/4eac9a04f2c2b3ae990b9b361d14b65103278c7b))
+* **nodejs:** support boolean resolved field in package-lock.json ([#11156](https://github.com/aquasecurity/trivy/issues/11156)) ([a2474b8](https://github.com/aquasecurity/trivy/commit/a2474b8410166610633adc7a5a20be1618c63c19))
+* **server:** propagate package modularity label, build info and installed files ([#11188](https://github.com/aquasecurity/trivy/issues/11188)) ([bf9f5b7](https://github.com/aquasecurity/trivy/commit/bf9f5b781ec7128e145367c8b5f9890117471fff))
+* **terraform:** do not override --skip-files with --skip-dirs ([#11191](https://github.com/aquasecurity/trivy/issues/11191)) ([1c8c54f](https://github.com/aquasecurity/trivy/commit/1c8c54fe9e2d18411cd997d5009a7771730f1481))
+
+
+### Performance Improvements
+
+* **secret:** avoid cloning the logger for every rule ([#11133](https://github.com/aquasecurity/trivy/issues/11133)) ([ab3cf86](https://github.com/aquasecurity/trivy/commit/ab3cf8625cf461e5471259e50681d230017b2b65))
+
 ## [0.74.0](https://github.com/aquasecurity/trivy/compare/v0.73.0...v0.74.0) (2026-08-14)
 
 
